@@ -1,0 +1,78 @@
+#nav-bar {
+    background-color: rgb(248, 252, 255);
+    border-bottom: 1px solid rgb(219, 224, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    margin: 0;
+    padding: 0;
+}
+
+
+#nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*내용이 넘치면 숨김*/
+    overflow: hidden;
+}
+
+#nav-menu li {
+    float : left; /*좌측 정렬*/
+}
+
+#nav-menu li a {
+    display: block; /* 링크를 블록으로 */
+    text-align: center; /*텍스트는 블록의 중심*/
+    padding: 14px 14px;
+    text-decoration: none; /*링크의 밑줄 제거*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(65, 144, 255);
+    cursor: pointer;
+    margin: 0 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#nav-menu li a:hover {
+    background-color: aliceblue;
+    color: rgb(3, 78, 184);
+    font-weight: bold;
+}
+#nav-bar:hover #nav-menu {
+    display: block; /* 마우스 호버 시 메뉴 표시 */
+}
+
+/* 햄버거 메뉴 스타일 설정 */
+#hamburger-menu {
+    display: none; /* 기본 상태에서는 햄버거 메뉴 숨김 */
+    cursor: pointer; /* 마우스 오버 시 포인터 모양 변경 */
+    padding: 10px;
+}
+
+/* 햄버거 메뉴 아이콘 스타일 (세 개의 가로줄) */
+#hamburger-menu div {
+    width: 25px; /* 가로줄 너비 */
+    height: 2px; /* 가로줄 높이 */
+    background-color: rgb(65, 144, 255); 
+    margin: 6px 0; /* 상하 마진 설정 (줄 간격) */
+}
+
+
+
+/* 미디어 쿼리를 사용한 반응형 디자인 설정 */
+@media screen and (max-width: 600px) {
+    #nav-menu {
+        display: none; /* 초기 상태에서는 숨김 */
+        width: 100%; /* 메뉴바 전체 너비 */
+        background-color: rgb(248, 252, 255); /* 배경색 */
+    }
+    #nav-menu li {
+        float: none; /* 세로 정렬을 위해 float 제거 */
+        width: 100%; /* 각 항목 전체 너비 */
+    }
+    #nav-menu li a {
+        text-align: left; /* 텍스트 왼쪽 정렬 */
+    }
+    #hamburger-menu {
+        display: block; /* 햄버거 메뉴 표시 */
+    }
+}

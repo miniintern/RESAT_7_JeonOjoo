@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>타이머</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   
+</head>
+
+
+<body>
+    <h1>Timer</h1>
+    
+    <div class="box">
+          
+                <div class="row">
+                <input id="hours" class="col" placeholder="0" min="0" ></input> :
+                <input type="number" id="min" class="col" contenteditable placeholder="0" min="0"></input> :
+                
+                <input type="number" id="sec" class="col" contenteditable placeholder="0" min="0"></input>
+                </div>
+         
+                <div class="row">
+                    <button id="start"  type="button" class="col btn btn-light mt-3 mb-1" style="background-color: pink; font-size:1.0rem;" onclick="js:start()">
+                        START
+                    </button>
+                    <button id="stop"  class="col btn btn-light mt-3 mb-1" style="background-color: pink; font-size:1.0rem;" onclick="js:stop()">
+                        STOP
+                    </button>
+                    <button id="reset" class="col btn btn-light mt-3 mb-1" style="background-color: pink; font-size:1.0rem;" onclick="js:reset()">
+                        RESET
+                    </button>
+                </div>
+            
+            
+       
+    </div>
+
+</body>
+<script src="./main.js"></script>
+
+</html>

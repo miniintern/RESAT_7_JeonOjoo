@@ -1,0 +1,44 @@
+
+.box {
+
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    padding: 20px;
+   
+
+    border: 5px solid #ff69b4;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.container {
+    width: 200px;
+    height: 60px;
+
+    background-color: aliceblue;
+
+}
+h1 {
+    /* 수평 중앙 정렬하기 */
+    text-align: center;
+  }
+
+
+
+#hours {
+    margin: 2px;
+    padding: 2px;
+
+}
+#min {
+    margin: 2px;
+    padding: 2px;
+}
+#sec {
+    margin: 2px;
+    padding: 2px;
+
+}

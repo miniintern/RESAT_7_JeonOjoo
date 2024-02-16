@@ -1,0 +1,93 @@
+.box {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 440px;
+    height: auto; /* 높이를 자동으로 조정하여 내용이 많아질 때 박스가 확장되도록 변경 */
+    border-radius: 10px;
+    padding: 30px;
+    background: linear-gradient( to top, #8EFBE1, #B2BFFF );
+    box-shadow: 4px 4px 3px grey;
+}
+
+.memopad {
+    background-color: #FFF8EB;
+    width: 380px;
+    height: auto; /* 내용에 따라 높이가 조정되도록 변경 */
+    min-height: 226px; /* 최소 높이 설정 */
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px grey;
+    overflow-y: auto; /* 내용이 많을 경우 스크롤 가능 */
+    padding: 10px;
+}
+
+/* 할 일 목록 스타일 */
+.task {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 우선순위별 배경색 */
+.priority-low { background-color: #F2F2FF; } /* 낮음 */
+.priority-medium { background-color: #CED0FF; } /* 보통 */
+.priority-high { background-color: #B4B7FF; } /* 높음 */
+.priority-very-high { background-color: #8489F9; } /* 아주 높음 */
+
+/* 체크박스와 할 일 텍스트 스타일 */
+.task-checkbox {
+    margin-right: 10px;
+}
+.task-text {
+    flex-grow: 1;
+}
+
+/* 수정 및 삭제 버튼 스타일 */
+.edit, .delete {
+    background-color: #E7DFDF; 
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* 필터 버튼 스타일 */
+.filter {
+    background-color: #E7DFDF; 
+    box-shadow: 3px 3px 3px #AFB2B5;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+/* 할 일 추가 및 우선순위 드롭다운 스타일 */
+#addButton, #priority {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.filter-selected {
+    background-color: #C9FFBB  !important; /* 선택된 필터 버튼의 배경색 */
+}
+
+#logo {
+    width: 149px;
+    height: 158px;
+    background-repeat: no-repeat;
+    background-image: url(./res/TODO.png);
+}
+
+#line {
+    width: 375.01px;
+    height: 2px;
+    background-color: white;
+}
